@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="ccm-plugin-bluetooth" version="0.1.1">
+  <name>CCMBluetoothPlugin</name>
+  <description>Phonegap Bluetooth Printer plugin</description>
+  <keywords>cordova,ccmbluetooth</keywords>
+  <repo></repo>
+  <issue></issue>
+
+  <engines>
+    <engine name="cordova" version=">=3.0.0"/>
+  </engines>
+
+  <js-module src="www/BluetoothPrinter.js" name="bluetoothPrinter">
+    <clobbers target="bluetoothPrinter" />
+  </js-module>
+
+  <!-- android -->
+  <platform name="android">
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="CCMBluetooth" >
+        <param name="android-package" value="com.ccm.Bluetooth.CCMBluetooth"/>
+      </feature>
+    </config-file>
+    <source-file src="src/com/ccm/Bluetooth/CCMBluetooth.java" target-dir="src/" />
+  </platform>
+
+</plugin>

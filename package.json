@@ -1,0 +1,23 @@
+﻿{
+  "name": "ccm-plugin-bluetooth",
+  "version": "0.1.1",
+  "description": "Phonegap Bluetooth Printer plugin.",
+  "cordova": {
+    "id": "ccm-plugin-bluetooth",
+    "platforms": ["android"]
+  },
+  "repository": {
+  },
+  "keywords": [
+    "cordova-ios",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "Sunil Radhakrishnan",
+  "license": "Infosys Technology Ltd."
+}
